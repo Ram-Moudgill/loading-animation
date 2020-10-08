@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+    display: grid;
+    place-items: center;
+    color: white;
+    height: 100vh;
+}
+.main__div
+{
+    display: grid;
+    place-items: center;
+}
+.animate__design
+{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: black;
+    border-right:2px solid white ;
+    animation: rotate 0.7s infinite linear;
+    display: flex;
+    align-items: center;
+}
+@keyframes rotate {
+    0%
+    {
+        transform: rotate(0deg);   
+    }
+    30%
+    {
+        border-right:2px solid yellow ;
+    }
+    60%{
+        border-right:2px solid rgb(30, 189, 189) ;
+    }
+    90%
+    {
+        border-right:2px solid rgb(189, 30, 30) ;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        border-right:2px solid rgb(170, 31, 78) ;
+    }
+}
